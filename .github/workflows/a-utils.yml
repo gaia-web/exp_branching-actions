@@ -1,0 +1,11 @@
+name: a
+on:
+  push:
+    branches:
+      - 'a-utils_*'
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo
+        run: echo "Scope a-utils pushed."
